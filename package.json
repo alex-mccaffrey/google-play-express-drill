@@ -2,15 +2,20 @@
   "name": "google-play-express-drill",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "node server",
+    "dev": "nodemon server",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.1"
   },
   "dependencies": {
     "cors": "^2.8.5",
